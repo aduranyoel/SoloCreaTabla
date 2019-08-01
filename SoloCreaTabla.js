@@ -6,7 +6,7 @@ function SoloCreaTabla(idTabla, options)
     options.rows            = options.rows || [];
     var tableElement        = document.getElementById(idTabla);
     var theadElement        = document.createElement("thead");
-    options.col.forEach(function(e, i){
+    options.col.forEach(function(e){
         var thElement       = document.createElement("th");
         thElement.innerHTML=e;
         theadElement.appendChild(thElement);

@@ -5,9 +5,9 @@ function SoloCreaTabla(idTabla, options)
         options.col = options.col || [];
         options.rows = options.rows || [];
         var tableElement = document.getElementById(idTabla);
+        tableElement.innerHTML = "";
         var theadElement = document.createElement("thead");
         var trHeaderElement = document.createElement("tr");
-
         options.col.forEach(function (e) {
             var thElement = document.createElement("th");
             thElement.innerHTML = e;

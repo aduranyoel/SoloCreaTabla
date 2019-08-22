@@ -1,7 +1,5 @@
-'use strict';
-
-function SoloCreaTabla(idTabla, options)
-{
+function SoloCreaTabla(idTabla, options){
+    'use strict';
     options         = options || {};
     options.col     = options.col || [];
     options.rows    = options.rows || [];
